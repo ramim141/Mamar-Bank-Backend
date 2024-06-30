@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Deposit Confirmation</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            color: #007BFF;
+        }
+
+        p {
+            color: #333;
+        }
+
+        h5 {
+            color: #28a745;
+        }
+
+        h4 {
+            color: #6c757d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="mb-4">Hello {{user.first_name}} {{user.last_name}}</h3>
+        <p>Your Deposit amount for ${{amount}} has been successfully Deposited in your accnount. After the deposit, your total amount is
+            ${{user.account.balance}}</p>
+            <p>This is for you !! </p>
+        <h5 class="text-success mt-4">Thanks For Banking With Us</h5>
+        <h4 class="text-secondary mt-4">Mamar Bank</h4>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

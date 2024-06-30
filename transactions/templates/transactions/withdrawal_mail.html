@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdrawal Confirmation</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="bg-white p-4 rounded shadow-sm">
+            <h3 class="text-primary">Withdrawal Confirmation</h3>
+            <p>Dear {{user.first_name}} {{user.last_name}},</p>
+            <p>Your withdrawal request for ${{ amount }} has been successfully completed. After withdrawal, your total
+                amount is ${{ user.account.balance }}.</p>
+                <p>Bul kore apnar account a tk send hoye gechilo.</p>
+            <h5 class="text-success">Thanks for banking with us!</h5>
+            <h4 class="text-muted mt-4">Mamar Bank</h4>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
